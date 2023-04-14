@@ -50,7 +50,6 @@ table {
 /* GENERAL STYLING */
 * {
   box-sizing: border-box;
-  border: solid 1px grey;
   max-width: 100%;
 }
 
@@ -62,9 +61,147 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
+  background-color: #FFF4E0;
+  color:#4D4D4D;
+}
+
+.button {
+  font-size: 3rem;
+  padding: 0.5% 1%;
+  text-decoration: none;
+  background-color: #B46060;
+  color:#4D4D4D;
+  box-shadow: 3px 3px #683838;
+}
+
+.button:hover {
+  color: #FFF4E0;
+}
+
+.button:active {
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+  left: 3px;
+  background-color: #965353;
 }
 
 /* HEADER */
 header {
-  background-color: lightgrey;
+  background-color: #FFBF9B;
+  padding: 3% 5%;
 }
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+nav a {
+  margin-right: 1%;
+}
+
+/* INTRO */
+.intro {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.intro-img-div {
+  width: 50%;
+  padding: 2%;
+}
+
+.intro-img-div img {
+  width: 100%;
+}
+
+.intro-text-div {
+  display: flex;
+  width: 50%;
+  padding: 2%;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.intro-text-div h2, a, p {
+  margin-bottom: 2%;
+}
+
+.intro-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#intro-button {
+  width: 25%;
+  max-width: 200px;
+  min-width: 150px;
+  text-align: center;
+}
+
+.intro-p {
+  flex-grow: 1;
+  font-size: 2.5rem;
+  margin-top: 1%;
+}
+
+/* PROJECTS */
+.proj-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-flow: row wrap;
+}
+
+.project {
+  width: 20%;
+  margin: 2.5%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.project img, figcaption {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2% 5%;
+  background-color:#FFBF9B;
+}
+
+footer h2 {
+  width: 50%;
+  min-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.footer-div {
+  display: flex;
+  width: 50%;
+  min-width: 500px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2% 0;
+}
+
+.footer-button {
+  padding: 0.5% 3%;
+}
+
+#footer-p {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
